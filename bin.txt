@@ -1,0 +1,102 @@
+def c_int(row):
+    global principal
+    if row['Year'] != 2023:
+        principal = row['prediction_label'] + principal*random.choice(rt)
+    else:
+        principal = row['prediction_label']
+    return principal
+
+
+def normalize(data):
+    gen = 0.5
+    spe = 2
+    data['MinTimeToNearestStation'] = gen*((data['MinTimeToNearestStation']-nor_min['MinTimeToNearestStation'])/(nor_max['MinTimeToNearestStation']-nor_min['MinTimeToNearestStation']))
+    data['Area'] = gen*((data['Area']-nor_min['Area'])/(nor_max['Area']-nor_min['Area']))
+    data['Frontage'] = gen*((data['Frontage']-nor_min['Frontage'])/(nor_max['Frontage']-nor_min['Frontage']))
+    data['BuildingYear'] = gen*((data['BuildingYear']-nor_min['BuildingYear'])/(nor_max['BuildingYear']-nor_min['BuildingYear']))
+    data['CityPlanning'] = gen*((data['CityPlanning']-nor_min['CityPlanning'])/(nor_max['CityPlanning']-nor_min['CityPlanning']))
+    data['Year'] = spe*((data['Year']-nor_min['Year'])/(nor_max['Year']-nor_min['Year']))
+    data['Population'] = gen*((data['Population']-nor_min['Population'])/(nor_max['Population']-nor_min['Population']))
+    data['GDP'] = gen*((data['GDP']-nor_min['GDP'])/(nor_max['GDP']-nor_min['GDP']))
+    
+    return data
+
+
+rt = [0.05, 0.08, 0.1]
+
+
+nor_min = {
+    'MinTimeToNearestStation': 0.0,
+    'MaxTimeToNearestStation': 0.0,
+    'Area': 10,
+    'UnitPrice': 0,
+    'Frontage': 0.0,
+    'BuildingYear': 1945,
+    'CityPlanning': 1,
+    'Year': 2005,
+    'Population': 557455,
+    'GDP': 16978.0
+}
+nor_max = {
+    'MinTimeToNearestStation': 120.0,
+    'MaxTimeToNearestStation': 120.0,
+    'Area': 2000,
+    'UnitPrice': 56250000,
+    'Frontage': 50.0,
+    'BuildingYear': 2020,
+    'CityPlanning': 16,
+    'Year': 2019,
+    'Population': 13940822,
+    'GDP': 115682412.0
+}
+development_idx = {
+    'Tokyo': 1,
+    'Aichi': 2,
+    'Shiga': 3,
+    'Shizuoka': 4,
+    'Fukui': 5,
+    'Toyama': 6,
+    'Osaka': 7,
+    'Nagano': 8,
+    'Ishikawa': 9,
+    'Hiroshima': 10,
+    'Kyoto': 11,
+    'Mie': 12,
+    'Kanagawa': 13,
+    'Yamanashi': 14,
+    'Okinawa': 15,
+    'Kagawa': 16,
+    'Gunma':17,
+    'Tochigi': 18,
+    'Niigata': 19,
+    'Hyogo': 20,
+    'Oita': 21,
+    'Gifu': 22,
+    'Hokkaido': 23,
+    'Ibaraki': 24,
+    'Yamaguchi': 25,
+    'Miyagi': 26,
+    'Fukushima': 27,
+    'Tottori': 28,
+    'Shimane': 29,
+    'Fukuoka': 30,
+    'Kumamoto': 31,
+    'Ehime': 32,
+    'Chiba': 33,
+    'Yamagata': 34,
+    'Saga': 35,
+    'Iwate': 36,
+    'Tokushima': 37,
+    'Nara': 38,
+    'Saitama': 39,
+    'Kochi': 40,
+    'Wakayama': 41,
+    'Miyazaki': 42,
+    'Akita': 43,
+    'Nagasaki': 44,
+    'Kagoshima': 45,
+    'Okayama': 46,
+    'Aomori': 47
+}
+
+
