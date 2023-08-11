@@ -182,13 +182,13 @@ model = get_model()
 
 if predict:
     # to be fetch from time series predition:
-    gname = f'GDP_FORECAST\\forecasts_{prefecture[0]}.pkl'
+    gname = f'GDP_FORECAST/forecasts_{prefecture[0]}.pkl'
     with open(gname, 'rb') as gforecast_file:
         gloaded_forecast = pickle.load(gforecast_file)
     gloaded_forecast = gloaded_forecast.values[4:]
     gloaded_forecast = gloaded_forecast[:len(gloaded_forecast)-(2030-year)]
 
-    pname = f'POP_FORECAST\\forecasts_{prefecture[0]}.pkl'
+    pname = f'POP_FORECAST/forecasts_{prefecture[0]}.pkl'
     with open(pname, 'rb') as pforecast_file:
         ploaded_forecast = pickle.load(pforecast_file)
     ploaded_forecast = ploaded_forecast.values[4:]
