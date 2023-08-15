@@ -40,10 +40,10 @@ To install requirements.txt (To install all the dependencies) : ``pip install -r
 
 ## ✍️ Author - Seeker Savants (Github Profile)
 - [Shubh Rai](https://github.com/shubhrai2811)
-- [Harsh Singh Rawat ](https://github.com/PAINxNAGATO)
-- [Preet Raj Gupta](https://github.com/Preetraj2002)
 - [Sayan Karmakar](https://github.com/ProPython007)
+- [Preet Raj Gupta](https://github.com/Preetraj2002)
 - [Shiv Shankar Singh](https://github.com/shibv)
+- [Harsh Singh Rawat ](https://github.com/PAINxNAGATO)
 
 <!-- <div align="center">
 <img src="https://avatars.githubusercontent.com/u/109328924?v=4" width="200"/>y
