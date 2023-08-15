@@ -34,7 +34,7 @@ To get requirements.txt file, navigate in the " main " Directory
 
 To install requirements.txt (To install all the dependencies) : ``pip install -r requirements.txt``
   
-6. Run Streamlit as a Python module : `` streamlit run app.py ``
+6. Run Streamlit as a Python module : `` streamlit run FutureValuEstate.py ``
 
 7. Final deployment is being done on the streamlit community 
 
