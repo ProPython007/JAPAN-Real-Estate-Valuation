@@ -4,7 +4,7 @@
 
 ### We worked on Japan Prefecture-wise Land Dataset which We obtainded from https://www.kaggle.com/datasets/nishiodens/japan-real-estate-transaction-prices website.
 
-### We Futhermore worked on Japan Prefecture-wise  GDP(Gross Domestic Product),Population,Crime rate,Air Quality Index(AQI) which We obtainded from https://en.wikipedia.org/wiki/Main_Page , https://en.wikipedia.org/wiki/Main_Page and https://www.aqi.in/dashboard/japan websites respectively.
+### We Futhermore worked on Japan Prefecture-wise  GDP(Gross Domestic Product) and Population which We obtainded from https://en.wikipedia.org/wiki/Main_Page, https://en.wikipedia.org/wiki/Main_Page websites respectively as well as we developed a picture based value estimation using a combined regressor and cnn model.
 
 ### The focus of this work was Time-Series Forecasting ,Web Scraping, Data Cleaning, Data Analysis, Model Building and Deployment .
 
