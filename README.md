@@ -56,3 +56,10 @@ To install requirements.txt (To install all the dependencies) : ``pip install -r
     <a href="mailto:shanuhalli@gmail.com" target="_blank"><img alt="Gmail" width="25px" src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png"></a>&nbsp&nbsp&nbsp
     <a href="https://api.whatsapp.com/send/?phone=%2B919860934650&text&type=phone_number&app_absent=0" target="_blank"><img alt="Whatsapp" width="25px" src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png"></a>
 </p>  -->
+
+
+## Preview
+
+![pp1](https://github.com/user-attachments/assets/2922b783-0493-4f65-956e-c71b47abe37c)
+
+
